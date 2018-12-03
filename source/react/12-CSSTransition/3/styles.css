@@ -1,0 +1,22 @@
+.example-enter {
+    transform: scale(0);
+}
+
+.example-enter-active {
+    transition: transform 3000ms ease-in-out;
+    transform: scale(1);
+}
+
+.example-exit {
+    transform: scale(1);
+}
+
+.example-exit-active {
+    transform: scale(0);
+    transition: transform 3000ms ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}

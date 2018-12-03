@@ -1,0 +1,14 @@
+.room {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paletteColor3);
+
+    & .ball {
+        width: 100px;
+        height: 100px;
+        background-color: var(--paletteColor4);
+        border-radius: 50%;
+    }
+}

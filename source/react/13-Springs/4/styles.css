@@ -1,0 +1,20 @@
+.room {
+    min-height: 100vh;
+
+    & div {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--paletteColor3);
+        font-family: Kanit, sans-serif;
+        font-weight: 800;
+        text-shadow: 3px 3px 3px black;
+        font-size: 26em;
+        will-change: transform, opacity;
+        user-select: none;
+    }
+}

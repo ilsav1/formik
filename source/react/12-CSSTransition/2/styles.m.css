@@ -1,0 +1,67 @@
+.room {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    background-color: var(--paletteColor3);
+
+    & input {
+        top: 10px;
+        margin-bottom: 50px;
+        height: 40px;
+        padding-left: 7px;
+        margin-bottom: 10px;
+    }
+
+    & button {
+        cursor: pointer;
+    }
+
+    & input,
+    & button {
+        background-color: var(--paletteColor3);
+        color: var(--paletteColor4);
+        outline: none;
+        border: 1px solid var(--paletteColor4);
+        border-radius: 7px;
+    }
+
+    & ul {
+        top: 150px;
+        color: var(--paletteColor4);
+        width: 600px;
+        min-height: 70vh;
+        padding: 10px 0 0 40px;
+        border: 1px solid var(--paletteColor4);
+        border-radius: 7px;
+
+        & li {
+            user-select: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    }
+}
+
+.enter {
+    opacity: 0.01;
+    transform: translateX(-1000px) scale(2);
+}
+
+.enterActive {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition: opacity 2500ms ease-in, transform 2500ms ease-in;
+}
+
+.exit {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.exitActive {
+    opacity: 0.01;
+    transform: translateX(1000px) scale(2);
+    transition: opacity 1000ms ease-out, transform 1000ms ease-out;
+}

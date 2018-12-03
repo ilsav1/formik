@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`example-11 test-1 1`] = `
+<bound Parent>
+  <section>
+    <h1>
+      Welcome!
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet!
+    </p>
+    <bound Child>
+      <span>
+        A Child component!
+      </span>
+    </bound Child>
+  </section>
+</bound Parent>
+`;

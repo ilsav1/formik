@@ -1,0 +1,36 @@
+.room {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paletteColor3);
+
+    & .ball {
+        width: 100px;
+        height: 100px;
+        background-color: var(--paletteColor4);
+        border-radius: 50%;
+    }
+}
+
+.enter {
+    opacity: 0.01;
+    transform: translateX(-1000px) scale(2);
+}
+
+.enterActive {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    transition: opacity 2500ms ease-in, transform 2500ms ease-in;
+}
+
+.exit {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+.exitActive {
+    opacity: 0.01;
+    transform: translateX(-1000px) scale(2);
+    transition: opacity 2500ms ease-out, transform 2500ms ease-out;
+}
